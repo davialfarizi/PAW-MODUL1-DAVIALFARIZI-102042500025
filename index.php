@@ -154,9 +154,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 <?php } else { ?>
     <div class="container">
-        <img src="logo.png" alt="logo">
+        <img src="logo.png" alt="Logo" class="logo">
         <h2>Pendaftaran Asisten Praktikum</h2>
-        <p classs="subtitle">Laboratorium Enterprise Application Development</p>
+        <p class="subtitle">Laboratorium Enterprise Application Development</p>
 
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST" && (!empty($namaErr) || !empty($waErr) || !empty($emailErr) || !empty($matkulErr) || !empty($motivasiErr))) : ?>
             <div class="alert alert_danger">

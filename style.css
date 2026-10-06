@@ -1,7 +1,7 @@
 @import url("bg-campus.png");
 
 :root {
---h-primary: #673de6;
+  --h-primary: #673de6;
   --h-primary-hover: #471ea7;
   --h-primary-focus: #7b66ff;
   --h-primary-light: #9d99ff;
@@ -55,21 +55,13 @@ body::before {
   bottom: 0;
   z-index: -1;
   background-image:
-    linear-gradient(
-      135deg,
-      rgba(17, 12, 41, 0.78) 0%,
-      rgba(25, 20, 56, 0.72) 100%
-    ),
-    radial-gradient(
-      circle at 85% 15%,
-      rgba(103, 61, 230, 0.35) 0%,
-      transparent 50%
-    ),
-    url("bg-campus.jpg");
+    linear-gradient(135deg, rgba(17, 12, 41, 0.55) 0%, rgba(25, 20, 56, 0.45) 100%),
+    radial-gradient(circle at 85% 15%, rgba(103, 61, 230, 0.25) 0%, transparent 50%),
+    url("bg-campus.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(8px);
+  filter: blur(4px);
   transform: scale(1.05);
 }
 
@@ -243,7 +235,7 @@ button[type="submit"]:active {
   background-color: var(--h-primary-tint);
   border: 1px solid var(--h-primary-light);
 }
-  
+
 .id-card {
   max-width: 680px;
   margin: 0 auto;
